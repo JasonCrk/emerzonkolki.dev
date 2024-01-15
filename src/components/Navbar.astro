@@ -4,6 +4,10 @@ import Logo from './Logo.astro'
 import ThemeToggleButton from './ThemeToggleButton'
 ---
 
+<div
+  class='absolute -top-14 left-1/2 -translate-x-1/2 bg-blue-600/70 dark:bg-purple-500/70 w-1/2 blur-[140px] h-28 rounded-[100%]'
+>
+</div>
 <header class='fixed top-0 left-0 w-full'>
   <nav class='flex justify-center items-center w-full h-20 gap-x-4 relative'>
     <Link href='/#aboutme'>About me</Link>
@@ -12,7 +16,7 @@ import ThemeToggleButton from './ThemeToggleButton'
     <Link href='/#projects'>Projects</Link>
     <Link href='/#contact'>Contact</Link>
     <div class='absolute top-0 right-0 pr-7 h-full flex items-center'>
-    <ThemeToggleButton client:load />
+      <ThemeToggleButton client:load />
     </div>
   </nav>
 </header>
