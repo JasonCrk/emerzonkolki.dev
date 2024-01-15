@@ -8,15 +8,45 @@ import ThemeToggleButton from './ThemeToggleButton'
   class='absolute -top-14 left-1/2 -translate-x-1/2 bg-blue-600/70 dark:bg-purple-500/70 w-1/2 blur-[140px] h-28 rounded-[100%]'
 >
 </div>
+
 <header class='fixed top-0 left-0 w-full'>
-  <nav class='flex justify-center items-center w-full h-20 gap-x-4 relative'>
+  <nav
+    class='flex justify-center items-center w-full h-20 gap-x-4 relative'
+    id='navbar'
+  >
     <Link href='/#aboutme'>About me</Link>
     <Link href='/#skills'>Skills</Link>
+
     <Logo />
+
     <Link href='/#projects'>Projects</Link>
     <Link href='/#contact'>Contact</Link>
+
     <div class='absolute top-0 right-0 pr-7 h-full flex items-center'>
       <ThemeToggleButton client:load />
     </div>
   </nav>
 </header>
+
+<script>
+  window.onscroll = () => {
+    let navbarElement = document.getElementById('navbar')!
+
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      navbarElement.classList.add(
+        'bg-white/30',
+        'dark:bg-dark-900/30',
+        'backdrop-blur-md'
+      )
+    } else {
+      navbarElement.classList.remove(
+        'bg-white/30',
+        'dark:bg-dark-900/30',
+        'backdrop-blur-md'
+      )
+    }
+  }
+</script>
