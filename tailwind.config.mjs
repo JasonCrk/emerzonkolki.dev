@@ -22,7 +22,11 @@ export default {
         200: '#7479FF'
       }
     },
-    extend: {}
+    extend: {
+      fontFamily: {
+        Montserrat: ['Montserrat']
+      }
+    }
   },
   plugins: []
 }
