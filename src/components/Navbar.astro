@@ -1,5 +1,5 @@
 ---
-import Link from './Link.astro'
+import NavLink from './NavLink.astro'
 import Logo from './Logo.astro'
 import ThemeToggleButton from './ThemeToggleButton'
 ---
@@ -14,13 +14,13 @@ import ThemeToggleButton from './ThemeToggleButton'
     class='flex justify-center items-center w-full h-20 gap-x-4 relative'
     id='navbar'
   >
-    <Link href='/#aboutme'>About me</Link>
-    <Link href='/#skills'>Skills</Link>
+    <NavLink href='/#aboutme'>About me</NavLink>
+    <NavLink href='/#skills'>Skills</NavLink>
 
     <Logo />
 
-    <Link href='/#projects'>Projects</Link>
-    <Link href='/#contact'>Contact</Link>
+    <NavLink href='/#projects'>Projects</NavLink>
+    <NavLink href='/#contact'>Contact</NavLink>
 
     <div class='absolute top-0 right-0 pr-7 h-full flex items-center'>
       <ThemeToggleButton client:load />
