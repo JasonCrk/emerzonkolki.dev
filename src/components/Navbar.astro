@@ -1,14 +1,18 @@
 ---
 import Link from './Link.astro'
 import Logo from './Logo.astro'
+import ThemeToggleButton from './ThemeToggleButton'
 ---
 
 <header class='fixed top-0 left-0 w-full'>
-  <nav class='flex justify-center items-center w-full h-20 gap-x-4'>
+  <nav class='flex justify-center items-center w-full h-20 gap-x-4 relative'>
     <Link href='/#aboutme'>About me</Link>
     <Link href='/#skills'>Skills</Link>
     <Logo />
     <Link href='/#projects'>Projects</Link>
     <Link href='/#contact'>Contact</Link>
+    <div class='absolute top-0 right-0 pr-7 h-full flex items-center'>
+    <ThemeToggleButton client:load />
+    </div>
   </nav>
 </header>
