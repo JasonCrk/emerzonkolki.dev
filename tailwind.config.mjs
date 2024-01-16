@@ -29,6 +29,14 @@ export default {
     extend: {
       fontFamily: {
         Montserrat: ['Montserrat']
+      },
+      fontSize: {
+        presentation: [
+          '2.5rem',
+          {
+            lineHeight: '2.5rem'
+          }
+        ]
       }
     }
   },

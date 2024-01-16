@@ -11,10 +11,12 @@ import Navbar from '../components/Navbar.astro'
     <meta name='generator' content={Astro.generator} />
   </head>
   <body
-    class='dark:bg-dark-900 dark:text-white text-dark-900 flex justify-center font-Montserrat'
+    class='dark:bg-dark-900 dark:text-white text-dark-900 bg-grey-50 flex justify-center font-Montserrat'
   >
     <Navbar />
-    <slot />
+    <main class='mt-20 max-w-[500px] w-full'>
+      <slot />
+    </main>
   </body>
 </html>
 
