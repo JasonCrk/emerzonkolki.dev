@@ -41,7 +41,7 @@ const ThemeToggleButton: FC = () => {
 
   return isMounted ? (
     <button
-      className={`p-[0.70rem] transition-colors duration-200 rounded text-[1.40rem] text-white ${theme === 'light' ? 'bg-blue-600 hover:bg-blue-400' : 'bg-purple-500 hover:bg-purple-200'}`}
+      className={`p-[10px] transition-colors duration-200 rounded text-lg text-white ${theme === 'light' ? 'bg-blue-600 hover:bg-blue-400' : 'bg-purple-500 hover:bg-purple-200'}`}
       onClick={toggleTheme}
     >
       {theme === 'light' ? <IoMoonOutline /> : <IoSunny />}
