@@ -18,7 +18,7 @@ const Link: FC<Props> = ({ children, isExternalLink, href, Icon }) => {
       target={isExternalLink ? '_blank' : undefined}
     >
       <div
-        className={`flex items-center justify-center text-sm bg-grey-50 text-dark-400 dark:text-white px-[6px] py-[5px] rounded-full gap-x-1 dark:bg-dark-800 before:absolute before:-bottom-2 before:-left-2 before:w-full before:h-9 before:rounded-3xl before:bg-grey-200 before:-z-10 before:content-[''] before:blur-sm hover:before:h-20 hover:before:w-[115%] before:transition-all before:duration-[400ms]`}
+        className={`flex items-center justify-center text-sm bg-grey-50 text-dark-400 dark:text-white px-[6px] py-[5px] rounded-full gap-x-1 dark:bg-dark-800 before:absolute before:-bottom-2 before:-left-2 before:w-full before:h-9 before:rounded-3xl before:bg-grey-200 before:-z-10 before:content-[''] before:blur-sm hover:before:h-20 hover:before:w-[115%] before:transition-all before:duration-[300ms]`}
       >
         {Icon && <Icon className='text-xl' />}
 
