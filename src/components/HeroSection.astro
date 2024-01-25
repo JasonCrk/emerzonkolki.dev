@@ -1,4 +1,5 @@
 ---
+import CvButton from './CvButton.astro'
 import JobStatus from './JobStatus.astro'
 import Link from './Link'
 
@@ -9,7 +10,7 @@ import { IoMailOutline } from 'react-icons/io5'
 <section class='py-16'>
   <div class='h-80 w-full'></div>
 
-  <article class='flex flex-col gap-y-[0.6rem]'>
+  <article class='flex flex-col gap-y-2'>
     <h1 class='font-bold text-presentation'>
       Hi, I'm Emerzon Javier <br /> Kolki Martinez <JobStatus />
     </h1>
@@ -34,7 +35,13 @@ import { IoMailOutline } from 'react-icons/io5'
       >
         LinkedIn
       </Link>
-      <Link Icon={IoMailOutline}>emerzonkolki@gmail.com</Link>
+      <Link href='mailto:emerzonkolki@gmail.com' Icon={IoMailOutline}>
+        emerzonkolki@gmail.com
+      </Link>
+    </div>
+
+    <div class='mt-2 flex justify-center'>
+      <CvButton />
     </div>
   </article>
 </section>
