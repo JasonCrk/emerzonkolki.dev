@@ -2,6 +2,7 @@
 import NavLink from './NavLink.astro'
 import Logo from './Logo.astro'
 import ThemeToggleButton from './ThemeToggleButton'
+import CvButton from './CvButton.astro'
 ---
 
 <div
@@ -11,9 +12,11 @@ import ThemeToggleButton from './ThemeToggleButton'
 
 <header class='fixed top-0 z-50 left-0 w-full'>
   <nav
-    class='flex justify-center items-center w-full h-16 gap-x-4 relative'
+    class='flex justify-center items-center w-full h-16 gap-x-3 relative'
     id='navbar'
   >
+    <CvButton />
+
     <NavLink href='/#aboutme'>About me</NavLink>
     <NavLink href='/#skills'>Skills</NavLink>
 
@@ -22,9 +25,7 @@ import ThemeToggleButton from './ThemeToggleButton'
     <NavLink href='/#projects'>Projects</NavLink>
     <NavLink href='/#contact'>Contact</NavLink>
 
-    <div class='absolute top-0 right-0 pr-7 h-full flex items-center'>
-      <ThemeToggleButton client:load />
-    </div>
+    <ThemeToggleButton client:load />
   </nav>
 </header>
 

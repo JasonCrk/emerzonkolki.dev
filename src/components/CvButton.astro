@@ -1,11 +1,14 @@
 ---
-import { IoDocument } from 'react-icons/io5'
+import { IoDocumentText } from 'react-icons/io5'
 ---
 
-<a
-  class='py-[6px] px-7 rounded text-white font-medium dark:bg-purple-500 dark:hover:bg-purple-200 bg-blue-500 hover:bg-blue-100 transition-colors duration-300 flex justify-center items-center gap-1 text-lg'
-  href='/documents/Emerzon Javier Kolki Martinez - CV.pdf'
->
-  <IoDocument className='text-xl' />
-  <span>CV</span>
-</a>
+<div class='relative group transition-[display]'>
+  <a
+    class='p-[10px] rounded text-white font-medium bg-purple-500 hover:bg-purple-200 dark:bg-blue-500 dark:hover:bg-blue-100 transition-colors duration-300 flex text-lg'
+    href='/documents/Emerzon Javier Kolki Martinez - CV.pdf'
+  >
+    <IoDocumentText className='text-xl' />
+  </a>
+
+  <span class='absolute hidden group-hover:block px-[5px] py-[2px] rounded bg-grey-50 dark:bg-dark-800 font-medium text-dark-800 tracking-wide dark:text-white border border-dark-800 dark:border-dark-400 -bottom-7 left-1/2 -translate-x-1/2 text-[0.7rem]'>CV</span>
+</div>
