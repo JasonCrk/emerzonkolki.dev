@@ -27,24 +27,43 @@ const { skills } = Astro.props
 ---
 
 <div class='flex flex-wrap gap-1'>
-  {skills.map(skill => (
-    skill === 'typescript' ? <TypescriptSkillTag />
-    : skill === 'angular' ? <AngularSkillTag />
-    : skill === 'docker' ? <DockerSkillTag />
-    : skill === 'materialui' ? <MaterialUISkillTag />
-    : skill === 'spring boot' ? <SpringBootSkillTag />
-    : skill === 'tailwindcss' ? <TailwindCssSkillTag />
-    : skill === 'react' ? <ReactSkillTag />
-    : skill === 'nodejs' ? <NodeJSSkillTag />
-    : skill === 'django' ? <DjangoSkillTag />
-    : skill === 'postgresql' ? <PostgreSQLSkillTag />
-    : skill === 'bootstrap' ? <BootstrapSkillTag />
-    : skill === 'mysql' ? <MySQLSkillTag />
-    : skill === 'expressjs' ? <ExpressSkillTag />
-    : skill === 'java' ? <JavaSkillTag />
-    : skill === 'javascript' ? <JavascriptSkillTag />
-    : skill === 'kubernetes' ? <KubernetesSkillTag />
-    : skill === 'python' ? <PythonSkillTag />
-    : null
-  ))}
+  {
+    skills.map(skill =>
+      skill === 'typescript' ? (
+        <TypescriptSkillTag />
+      ) : skill === 'angular' ? (
+        <AngularSkillTag />
+      ) : skill === 'docker' ? (
+        <DockerSkillTag />
+      ) : skill === 'materialui' ? (
+        <MaterialUISkillTag />
+      ) : skill === 'spring boot' ? (
+        <SpringBootSkillTag />
+      ) : skill === 'tailwindcss' ? (
+        <TailwindCssSkillTag />
+      ) : skill === 'react' ? (
+        <ReactSkillTag />
+      ) : skill === 'nodejs' ? (
+        <NodeJSSkillTag />
+      ) : skill === 'django' ? (
+        <DjangoSkillTag />
+      ) : skill === 'postgresql' ? (
+        <PostgreSQLSkillTag />
+      ) : skill === 'bootstrap' ? (
+        <BootstrapSkillTag />
+      ) : skill === 'mysql' ? (
+        <MySQLSkillTag />
+      ) : skill === 'expressjs' ? (
+        <ExpressSkillTag />
+      ) : skill === 'java' ? (
+        <JavaSkillTag />
+      ) : skill === 'javascript' ? (
+        <JavascriptSkillTag />
+      ) : skill === 'kubernetes' ? (
+        <KubernetesSkillTag />
+      ) : skill === 'python' ? (
+        <PythonSkillTag />
+      ) : null
+    )
+  }
 </div>
