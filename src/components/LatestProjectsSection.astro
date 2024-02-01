@@ -1,0 +1,53 @@
+---
+import Title from './Title.astro'
+import Link from './Link'
+import LatestProjectItem from './LatestProjectItem.astro'
+---
+
+<section class='py-16'>
+  <Title>Latest projects</Title>
+
+  <div class='mt-4 flex flex-col gap-4'>
+    <LatestProjectItem
+      image='/Jason.png'
+      name='ask-everyone'
+      title='Ask Everyone'
+      description='Aplicacion de para crear encuestas, responder dichas encuestas y poder ver en forma de estadisticas las respuestas de los encuestados.'
+      skills={[
+        'typescript',
+        'angular',
+        'materialui',
+        'tailwindcss',
+        'java',
+        'spring boot',
+        'nodejs',
+        'expressjs',
+        'mysql',
+        'mongodb',
+        'docker',
+        'kubernetes'
+      ]}
+    />
+
+    <LatestProjectItem
+      image='/Jason.png'
+      name='youtube-clone'
+      title='Youtube Clone'
+      description='Un clone de la aplicación web de YouTube, con la mayoria de sus funcionalidades.'
+      skills={[
+        'typescript',
+        'react',
+        'materialui',
+        'python',
+        'django',
+        'docker'
+      ]}
+    />
+
+    <div class='flex justify-center'>
+      <Link href='/projects' extraClasses='px-8 py-2'>
+        Ver todos los proyectos
+      </Link>
+    </div>
+  </div>
+</section>

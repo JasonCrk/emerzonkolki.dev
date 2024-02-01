@@ -1,0 +1,16 @@
+---
+import type { Skill } from '../../types/skills'
+import { skillTagStyleClasses } from '../../types/skills'
+
+interface Props {
+  style: Skill
+}
+
+const { style } = Astro.props
+---
+
+<span
+  class={`${skillTagStyleClasses[style]} py-[6px] px-[10px] rounded-full border text-xs font-medium flex gap-1.5 w-fit items-center`}
+>
+  <slot />
+</span>

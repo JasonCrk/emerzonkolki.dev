@@ -1,0 +1,47 @@
+---
+import type { Skill } from '../types/skills'
+
+import SkillTagList from './SkillTagList.astro'
+
+interface Props {
+  name: string
+  image: string
+  title: string
+  description: string
+  skills: Skill[]
+}
+
+const { name, image, description, title, skills } = Astro.props
+
+const projectUrl = `/projects/${name}`
+---
+
+<article>
+  <div class='mb-2'>
+    <h5 class='text-lg font-semibold'>
+      {title}
+    </h5>
+    <p class='text-pretty text-sm'>
+      {description}
+    </p>
+    <div class='mt-2'>
+      <SkillTagList skills={skills} />
+    </div>
+  </div>
+
+  <a href={projectUrl} class='relative'>
+    <div
+      class='w-full flex transition-[opacity] top-0 left-0 hover:opacity-100 backdrop-blur-md opacity-0 duration-300 justify-center dark:bg-dark-900/70 bg-dark-900/30 items-center absolute h-full rounded-md gap-2'
+    >
+      <span class='content-[""] h-[2px] w-6 bg-grey-200'></span>
+      <span class='text-white'>Ir a la pagina</span>
+      <span class='content-[""] h-[2px] w-6 bg-grey-200'></span>
+    </div>
+
+    <img
+      src={image}
+      alt={name}
+      class='w-full object-cover h-56 rounded-md shadow-lg dark:shadow-grey-200/15 shadow-grey-200/70'
+    />
+  </a>
+</article>

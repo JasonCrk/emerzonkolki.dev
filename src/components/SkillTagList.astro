@@ -1,0 +1,50 @@
+---
+import type { Skill } from '../types/skills'
+
+import AngularSkillTag from './skillTags/AngularSkillTag.astro'
+import PythonSkillTag from './skillTags/PythonSkillTag.astro'
+import TailwindCssSkillTag from './skillTags/TailwindCssSkillTag.astro'
+import TypescriptSkillTag from './skillTags/TypescriptSkillTag.astro'
+import SpringBootSkillTag from './skillTags/SpringBootSkillTag.astro'
+import MaterialUISkillTag from './skillTags/MaterialUISkillTag.astro'
+import PostgreSQLSkillTag from './skillTags/PostgreSQLSkillTag.astro'
+import KubernetesSkillTag from './skillTags/KubernetesSkillTag.astro'
+import DockerSkillTag from './skillTags/DockerSkillTag.astro'
+import NodeJSSkillTag from './skillTags/NodeJsSkillTag.astro'
+import ExpressSkillTag from './skillTags/ExpressSkillTag.astro'
+import DjangoSkillTag from './skillTags/DjangoSkillTag.astro'
+import ReactSkillTag from './skillTags/ReactSkillTag.astro'
+import MySQLSkillTag from './skillTags/MySQLSkillTag.astro'
+import BootstrapSkillTag from './skillTags/BootstrapSkillTag.astro'
+import JavaSkillTag from './skillTags/JavaSkillTag.astro'
+import JavascriptSkillTag from './skillTags/JavascriptSkillTag.astro'
+
+interface Props {
+  skills: Skill[]
+}
+
+const { skills } = Astro.props
+---
+
+<div class='flex flex-wrap gap-1'>
+  {skills.map(skill => (
+    skill === 'typescript' ? <TypescriptSkillTag />
+    : skill === 'angular' ? <AngularSkillTag />
+    : skill === 'docker' ? <DockerSkillTag />
+    : skill === 'materialui' ? <MaterialUISkillTag />
+    : skill === 'spring boot' ? <SpringBootSkillTag />
+    : skill === 'tailwindcss' ? <TailwindCssSkillTag />
+    : skill === 'react' ? <ReactSkillTag />
+    : skill === 'nodejs' ? <NodeJSSkillTag />
+    : skill === 'django' ? <DjangoSkillTag />
+    : skill === 'postgresql' ? <PostgreSQLSkillTag />
+    : skill === 'bootstrap' ? <BootstrapSkillTag />
+    : skill === 'mysql' ? <MySQLSkillTag />
+    : skill === 'expressjs' ? <ExpressSkillTag />
+    : skill === 'java' ? <JavaSkillTag />
+    : skill === 'javascript' ? <JavascriptSkillTag />
+    : skill === 'kubernetes' ? <KubernetesSkillTag />
+    : skill === 'python' ? <PythonSkillTag />
+    : null
+  ))}
+</div>
