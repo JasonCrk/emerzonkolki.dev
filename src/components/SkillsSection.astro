@@ -1,5 +1,6 @@
 ---
 import Title from './Title.astro'
+import Tooltip from './Tooltip.astro'
 
 import JavascriptIcon from './icons/JavascriptIcon.astro'
 import TypescriptIcon from './icons/TypescriptIcon.astro'
@@ -24,24 +25,113 @@ import KubernetesIcon from './icons/KubernetesIcon.astro'
 <section class='py-40' id='skills'>
   <Title>Skills</Title>
 
-  <div class='grid grid-cols-5 gap-3 place-items-center mt-4'>
-    <a href='/projects?language=javascript'><JavascriptIcon /></a>
-    <a href='/projects?language=typescript'><TypescriptIcon /></a>
-    <a href='/projects?framework_frontend=react'><ReactIcon /></a>
-    <a href='/projects?framework_frontend=angular'><AngularIcon /></a>
-    <a href='/projects?lib=tailwindcss'><TailwindCSSIcon /></a>
-    <a href='/projects?lib=materialui'><MaterialUIIcon /></a>
-    <a href='/projects?lib=bootstrap'><BootstrapIcon /></a>
-    <a href='/projects?language=nodejs'><NodeJSIcon /></a>
-    <a href='/projects?framework_backend=express'><ExpressIcon /></a>
-    <a href='/projects?language=java'><JavaIcon /></a>
-    <a href='/projects?framework_backend=springboot'><SpringBootIcon /></a>
-    <a href='/projects?language=python'><PythonIcon /></a>
-    <a href='/projects?language=django'><DjangoIcon /></a>
-    <a href='/projects?db=mysql'><MySQLIcon /></a>
-    <a href='/projects?db=postgresql'><PostgreSQLIcon /></a>
-    <a href='/projects?tech=git'><GitIcon /></a>
-    <a href='/projects?tech=docker'><DockerIcon /></a>
-    <a href='/projects?tech=kubernetes'><KubernetesIcon /></a>
-  </div>
+  <article class='grid grid-cols-5 gap-3 place-items-center mt-4'>
+    <Tooltip title='JavaScript'>
+      <a href='/projects?language=javascript'>
+        <JavascriptIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='TypeScript'>
+      <a href='/projects?language=typescript'>
+        <TypescriptIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='React'>
+      <a href='/projects?lib=react'>
+        <ReactIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Angular'>
+      <a href='/projects?framework_frontend=angular'>
+        <AngularIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='TailwindCSS'>
+      <a href='/projects?lib=tailwindcss'>
+        <TailwindCSSIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Material UI'>
+      <a href='/projects?lib=materialui'>
+        <MaterialUIIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Bootstrap'>
+      <a href='/projects?lib=bootstrap'>
+        <BootstrapIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Node.js'>
+      <a href='/projects?language=nodejs'>
+        <NodeJSIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Express'>
+      <a href='/projects?framework_backend=express'>
+        <ExpressIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Java'>
+      <a href='/projects?language=java'>
+        <JavaIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Spring Boot'>
+      <a href='/projects?framework_backend=springboot'>
+        <SpringBootIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Python'>
+      <a href='/projects?language=python'>
+        <PythonIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Django'>
+      <a href='/projects?language=django'>
+        <DjangoIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='MySQL'>
+      <a href='/projects?db=mysql'>
+        <MySQLIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='PostgreSQL'>
+      <a href='/projects?db=postgresql'>
+        <PostgreSQLIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Git'>
+      <a href='/projects?tech=git'>
+        <GitIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Docker'>
+      <a href='/projects?tech=docker'>
+        <DockerIcon />
+      </a>
+    </Tooltip>
+
+    <Tooltip title='Kubernetes'>
+      <a href='/projects?tech=kubernetes'>
+        <KubernetesIcon />
+      </a>
+    </Tooltip>
+  </article>
 </section>
