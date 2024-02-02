@@ -1,5 +1,4 @@
 ---
-import CvButton from './CvButton.astro'
 import JobStatus from './JobStatus.astro'
 import Link from './Link'
 
@@ -7,8 +6,10 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { IoMailOutline } from 'react-icons/io5'
 ---
 
-<section class='py-16'>
+<section class='py-16 relative'>
   <div class='h-80 w-full'></div>
+
+  <div class='absolute right-[70%] sm:-right-[8%] md:-right-[25%] lg:-right-[55%] top-[45%] w-20 h-20 rounded-full bg-blue-500/70 blur-3xl'></div>
 
   <article class='flex flex-col gap-y-2'>
     <h1 class='font-bold text-presentation'>
