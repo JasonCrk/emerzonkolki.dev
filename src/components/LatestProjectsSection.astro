@@ -1,52 +1,34 @@
 ---
+import type { Skill } from '../types/skills'
+
 import Title from './Title.astro'
 import Link from './Link'
 import LatestProjectItem from './LatestProjectItem.astro'
+
+import projects from '../data/projects.json'
+
+const latestProjects = projects.slice(0, 2)
 ---
 
 <section class='py-20 relative' id='projects'>
-  <div class='absolute top-1/3 left-0 sm:-left-[8%] md:-left-[25%] lg:-left-[58%] w-44 h-44 rounded-full bg-blue-500/70 dark:bg-purple-500/50 blur-[100px]'></div>
+  <div
+    class='absolute top-1/3 left-0 sm:-left-[8%] md:-left-[25%] lg:-left-[58%] w-44 h-44 rounded-full bg-blue-500/70 dark:bg-purple-500/50 blur-[100px]'
+  >
+  </div>
 
-  <div class='absolute right-[10%] sm:-right-[8%] md:-right-[25%] lg:-right-[46%] bottom-20 w-20 h-20 rounded-full bg-purple-500/85 dark:bg-blue-500/70 blur-2xl dark:blur-3xl'></div>
+  <div
+    class='absolute right-[10%] sm:-right-[8%] md:-right-[25%] lg:-right-[46%] bottom-20 w-20 h-20 rounded-full bg-purple-500/85 dark:bg-blue-500/70 blur-2xl dark:blur-3xl'
+  >
+  </div>
 
   <Title>Latest projects</Title>
 
   <div class='mt-4 flex flex-col gap-4'>
-    <LatestProjectItem
-      image='/Jason.png'
-      name='ask-everyone'
-      title='Ask Everyone'
-      description='Aplicacion de para crear encuestas, responder dichas encuestas y poder ver en forma de estadisticas las respuestas de los encuestados.'
-      skills={[
-        'typescript',
-        'angular',
-        'materialui',
-        'tailwindcss',
-        'java',
-        'spring boot',
-        'nodejs',
-        'expressjs',
-        'mysql',
-        'mongodb',
-        'docker',
-        'kubernetes'
-      ]}
-    />
-
-    <LatestProjectItem
-      image='/Jason.png'
-      name='youtube-clone'
-      title='Youtube Clone'
-      description='Un clone de la aplicación web de YouTube, con la mayoria de sus funcionalidades.'
-      skills={[
-        'typescript',
-        'react',
-        'materialui',
-        'python',
-        'django',
-        'docker'
-      ]}
-    />
+    {
+      latestProjects.map(project => (
+        <LatestProjectItem {...project} stack={project.stack as Skill[]} />
+      ))
+    }
 
     <div class='flex justify-center'>
       <Link href='/projects' extraClasses='px-8 py-2'>
