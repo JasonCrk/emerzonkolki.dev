@@ -2,7 +2,7 @@
 import type { Skill } from '../../types/skills'
 
 import Layout from '../../layouts/Layout.astro'
-import LatestProjectItem from '../../components/LatestProjectItem.astro'
+import ProjectItem from '../../components/ProjectItem.astro'
 import Title from '../../components/Title.astro'
 
 import projects from '../../data/projects.json'
@@ -13,9 +13,11 @@ import projects from '../../data/projects.json'
     <Title>Projects</Title>
 
     <article class='flex flex-col gap-6 mt-4'>
-      {projects.map(project => (
-        <LatestProjectItem {...project} stack={project.stack as Skill[]} />
-      ))}
+      {
+        projects.map(project => (
+          <ProjectItem {...project} stack={project.stack as Skill[]} />
+        ))
+      }
     </article>
   </section>
 </Layout>
