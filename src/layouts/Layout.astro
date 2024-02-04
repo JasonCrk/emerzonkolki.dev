@@ -1,5 +1,13 @@
 ---
 import Navbar from '../components/Navbar.astro'
+
+interface Props {
+  title?: string
+}
+
+const { title } = Astro.props
+
+const fullTitle = title ? 'Emerzon Kolki - ' + title : 'Emerzon Kolki'
 ---
 
 <!doctype html>
@@ -7,7 +15,7 @@ import Navbar from '../components/Navbar.astro'
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-    <title>Emerzon Javier Kolki Martinez - Portfolio</title>
+    <title>{fullTitle}</title>
     <meta name='generator' content={Astro.generator} />
   </head>
   <body
