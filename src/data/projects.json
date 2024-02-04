@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Ask Everyone",
+    "name": "ask-everyone",
+    "image": "https://www.customerly.io/static/7aa63a5e40f13b097b6bf39d990199a6/5c90f/in-app-surveys-1.jpg",
+    "description": "Aplicación de para crear encuestas, responder dichas encuestas y poder ver en forma de estadísticas las respuestas de los encuestados.",
+    "stack": [
+      "angular",
+      "tailwindcss",
+      "nodejs",
+      "expressjs",
+      "java",
+      "spring boot",
+      "postgresql",
+      "mongodb",
+      "docker",
+      "kubernetes"
+    ]
+  },
+  {
+    "title": "Youtube Clone",
+    "name": "youtube-clone",
+    "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
+    "description": "Un clone de la aplicación web de YouTube, con la mayoría de sus funcionalidades.",
+    "stack": ["typescript", "react", "materialui", "python", "django", "docker"]
+  },
+  {
+    "title": "Master Event Planner",
+    "name": "master-event-planner",
+    "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
+    "description": "Un desarrollador de eventos privados y públicos con la capacidad de enviar recordatorios periódicos a medida que se acerca la fecha de inicio del evento.",
+    "stack": [
+      "typescript",
+      "react",
+      "bootstrap",
+      "firebase",
+      "java",
+      "spring boot",
+      "mysql",
+      "firebases"
+    ]
+  },
+  {
+    "title": "Control Interno de Almacén",
+    "name": "control-interno-almacen",
+    "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
+    "description": "Una aplicación diseñada para emular el procedimiento de \"Inventario y baja de productos de almacén\" en la empresa Superintendencia de Mercado de Valores (SMV).",
+    "stack": [
+      "typescript",
+      "react",
+      "chackraui",
+      "firebase",
+      "java",
+      "spring boot",
+      "firebases",
+      "mysql"
+    ]
+  }
+]
