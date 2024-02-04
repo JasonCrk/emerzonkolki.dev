@@ -1,0 +1,21 @@
+---
+import type { Skill } from '../../types/skills'
+
+import Layout from '../../layouts/Layout.astro'
+import LatestProjectItem from '../../components/LatestProjectItem.astro'
+import Title from '../../components/Title.astro'
+
+import projects from '../../data/projects.json'
+---
+
+<Layout>
+  <section class='pt-5 pb-16'>
+    <Title>Projects</Title>
+
+    <article class='flex flex-col gap-6 mt-4'>
+      {projects.map(project => (
+        <LatestProjectItem {...project} stack={project.stack as Skill[]} />
+      ))}
+    </article>
+  </section>
+</Layout>
