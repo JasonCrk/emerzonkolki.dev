@@ -12,7 +12,7 @@ import projects from '../../data/projects.json'
   <section class='pt-5 pb-16'>
     <Title>Projects</Title>
 
-    <article class='flex flex-col gap-6 mt-4'>
+    <article class='flex flex-col gap-4 mt-5'>
       {
         projects.map(project => (
           <ProjectItem {...project} stack={project.stack as Skill[]} />
