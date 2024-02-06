@@ -22,7 +22,15 @@
     "name": "youtube-clone",
     "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
     "description": "Un clone de la aplicación web de YouTube, con la mayoría de sus funcionalidades.",
-    "stack": ["typescript", "react", "materialui", "python", "django", "docker"]
+    "stack": [
+      "typescript",
+      "react",
+      "materialui",
+      "python",
+      "django",
+      "postgresql",
+      "docker"
+    ]
   },
   {
     "title": "Master Event Planner",
