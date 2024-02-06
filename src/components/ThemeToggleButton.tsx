@@ -47,7 +47,7 @@ const ThemeToggleButton: FC = () => {
       {theme === 'light' ? <IoMoonOutline /> : <IoSunny />}
     </button>
   ) : (
-    <div />
+    <div className='w-[40px] h-[40px]'></div>
   )
 }
 
