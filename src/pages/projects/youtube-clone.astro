@@ -1,0 +1,68 @@
+---
+import Layout from '../../layouts/Layout.astro'
+
+import Tag from '../../components/Tag.astro'
+import ProjectBreadcrumb from '../../components/ProjectBreadcrumb.astro'
+import TextLink from '../../components/TextLink.astro'
+import SkillTagList from '../../components/SkillTagList.astro'
+---
+
+<Layout title='Youtube Clone'>
+  <section class='pt-4 pb-6'>
+    <ProjectBreadcrumb title='Youtube Clone' year={2023} />
+
+    <p class='mb-3 indent-4 text-sm'>
+      Una aplicación que cumple con todas las características principales de
+      YouTube y más. Por ejemplo: Subir videos, tener varios canales de una
+      cuenta, cambiar entre canales, playlists, etc.
+    </p>
+
+    <article class='px-6 mb-4 flex flex-col gap-2'>
+      <div class='flex gap-2 flex-col items-start mb-2'>
+        <Tag>Frontend Stack</Tag>
+        <SkillTagList skills={['typescript', 'react', 'materialui']} />
+      </div>
+
+      <div class='flex gap-2 flex-col items-start mb-2'>
+        <Tag>Backend Stack</Tag>
+        <SkillTagList skills={['python', 'django', 'postgresql', 'docker']} />
+      </div>
+
+      <div class='flex gap-1'>
+        <Tag>GitHub Frontend</Tag>
+        <TextLink
+          href='https://github.com/JasonCrk/YoutubeCloneApp'
+          isExternalLink
+        >
+          YoutubeCloneApp
+        </TextLink>
+      </div>
+
+      <div class='flex gap-1'>
+        <Tag>GitHub Backend</Tag>
+        <TextLink
+          href='https://github.com/JasonCrk/YoutubeCloneApi'
+          isExternalLink
+        >
+          YoutubeCloneApi
+        </TextLink>
+      </div>
+    </article>
+
+    <article class='flex gap-3 flex-col'>
+      <img
+        src='/images/projects/Youtube Clone - Home Page.png'
+        alt='Youtube Clone - Home Page'
+        loading='lazy'
+        class='w-full aspect-video rounded-md'
+      />
+
+      <img
+        src='/images/projects/Youtube Clone - Watch Video Page.png'
+        alt='Youtube Clone - Watch Video Page'
+        loading='lazy'
+        class='w-full aspect-video rounded-md'
+      />
+    </article>
+  </section>
+</Layout>

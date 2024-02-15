@@ -20,7 +20,7 @@
   {
     "title": "Youtube Clone",
     "name": "youtube-clone",
-    "image": "/images/Youtube Clone - Thumbnail.png",
+    "image": "/images/projects/Youtube Clone - Thumbnail.png",
     "description": "Un clone de la aplicación web de YouTube, con la mayoría de sus funcionalidades.",
     "stack": [
       "typescript",

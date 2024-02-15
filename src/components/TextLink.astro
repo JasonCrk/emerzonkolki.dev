@@ -1,0 +1,21 @@
+---
+import { FiExternalLink } from 'react-icons/fi'
+
+interface Props {
+  href: string
+  isExternalLink?: boolean
+}
+
+const { href, isExternalLink } = Astro.props
+---
+
+<a
+  class='hover:underline hover:underline-offset-[3px] text-purple-500 font-medium dark:text-blue-400 inline-flex gap-1 items-center text-sm'
+  href={href}
+  target={isExternalLink ? '_blank' : undefined}
+>
+  <span>
+    <slot />
+  </span>
+  {isExternalLink && <FiExternalLink />}
+</a>
