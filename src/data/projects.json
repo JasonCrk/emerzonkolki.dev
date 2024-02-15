@@ -20,7 +20,7 @@
   {
     "title": "Youtube Clone",
     "name": "youtube-clone",
-    "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
+    "image": "/images/Youtube Clone - Thumbnail.png",
     "description": "Un clone de la aplicación web de YouTube, con la mayoría de sus funcionalidades.",
     "stack": [
       "typescript",
