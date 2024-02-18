@@ -2,7 +2,7 @@
   {
     "title": "Ask Everyone",
     "name": "ask-everyone",
-    "image": "https://www.customerly.io/static/7aa63a5e40f13b097b6bf39d990199a6/5c90f/in-app-surveys-1.jpg",
+    "image": "/images/projects/Ask Everyone - Thumbnail.png",
     "description": "Aplicación de para crear encuestas, responder dichas encuestas y poder ver en forma de estadísticas las respuestas de los encuestados.",
     "stack": [
       "angular",
@@ -35,7 +35,7 @@
   {
     "title": "Master Event Planner",
     "name": "master-event-planner",
-    "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
+    "image": "/images/projects/Master Event Planner - Thumbnail.png",
     "description": "Un desarrollador de eventos privados y públicos con la capacidad de enviar recordatorios periódicos a medida que se acerca la fecha de inicio del evento.",
     "stack": [
       "typescript",
@@ -51,7 +51,7 @@
   {
     "title": "Control Interno de Almacén",
     "name": "control-interno-almacen",
-    "image": "https://typecast.ai/learn/wp-content/uploads/2022/08/22q3_39_main.jpg",
+    "image": "/images/projects/Control Interno Almacen - Thumbnail.png",
     "description": "Una aplicación diseñada para emular el procedimiento de \"Inventario y baja de productos de almacén\" en la empresa Superintendencia de Mercado de Valores (SMV).",
     "stack": [
       "typescript",
