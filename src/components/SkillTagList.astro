@@ -18,6 +18,7 @@ import MySQLSkillTag from './skillTags/MySQLSkillTag.astro'
 import BootstrapSkillTag from './skillTags/BootstrapSkillTag.astro'
 import JavaSkillTag from './skillTags/JavaSkillTag.astro'
 import JavascriptSkillTag from './skillTags/JavascriptSkillTag.astro'
+import NextJsSkillTag from './skillTags/NextJsSkillTag.astro'
 
 interface Props {
   skills: Skill[]
@@ -63,6 +64,8 @@ const { skills } = Astro.props
         <KubernetesSkillTag />
       ) : skill === 'python' ? (
         <PythonSkillTag />
+      ) : skill === 'nextjs' ? (
+        <NextJsSkillTag />
       ) : null
     )
   }
