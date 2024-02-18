@@ -17,6 +17,7 @@ export type Skill =
   | 'mongodb'
   | 'docker'
   | 'kubernetes'
+  | 'nextjs'
 
 export const skillTagStyleClasses = {
   javascript: 'bg-[#f7e0251a] border-[#f7e025] text-[#f7e025]',
@@ -37,5 +38,7 @@ export const skillTagStyleClasses = {
   postgresql: 'bg-[#4595D61a] border-[#4595D6] text-[#4595D6]',
   mongodb: 'bg-[1a] border-[] text-[]',
   docker: 'bg-[#2497ed1a] border-[#2497ed] text-[#2497ed]',
-  kubernetes: 'bg-[#2e6ce61a] border-[#2e6ce6] text-[#2e6ce6]'
+  kubernetes: 'bg-[#2e6ce61a] border-[#2e6ce6] text-[#2e6ce6]',
+  nextjs:
+    'dark:bg-[#ffffff1a] dark:border-white dark:text-white bg-dark-400/10 border-dark-800 text-dark-800'
 }
