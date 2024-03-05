@@ -43,6 +43,8 @@ const ThemeToggleButton: FC = () => {
     <button
       className={`p-[10px] transition-colors duration-200 rounded text-xl text-white ${theme === 'light' ? 'bg-blue-600 hover:bg-blue-400' : 'bg-purple-500 hover:bg-purple-200'}`}
       onClick={toggleTheme}
+      title='Toggle theme'
+      aria-label='Toggle theme'
     >
       {theme === 'light' ? <IoMoonOutline /> : <IoSunny />}
     </button>

@@ -17,25 +17,25 @@ const projectUrl = `/projects/${name}`
 ---
 
 <article>
-  <div class='mb-2'>
-    <h5 class='text-lg font-semibold'>
+  <section class='mb-2'>
+    <p class='text-lg font-semibold'>
       {title}
-    </h5>
+    </p>
     <p class='text-pretty text-sm'>
       {description}
     </p>
     <div class='mt-2'>
       <SkillTagList skills={stack} />
     </div>
-  </div>
+  </section>
 
   <a href={projectUrl} class='relative'>
     <div
       class='w-full flex transition-[opacity] top-0 left-0 hover:opacity-100 backdrop-blur-md opacity-0 duration-300 justify-center dark:bg-dark-900/70 bg-dark-900/30 items-center absolute h-full rounded-md gap-2'
     >
-      <span class='content-[""] h-[2px] w-6 bg-grey-200'></span>
-      <span class='text-white'>Ir a la pagina</span>
-      <span class='content-[""] h-[2px] w-6 bg-grey-200'></span>
+      <span class='content-[""] h-[2px] w-6 bg-grey-50'></span>
+      <span class='text-grey-50'>Ir a la pagina</span>
+      <span class='content-[""] h-[2px] w-6 bg-grey-50'></span>
     </div>
 
     <img
