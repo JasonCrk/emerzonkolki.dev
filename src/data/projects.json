@@ -36,7 +36,7 @@
     "title": "Master Event Planner",
     "name": "master-event-planner",
     "image": "/images/projects/Master Event Planner - Thumbnail.png",
-    "description": "Un desarrollador de eventos privados y públicos con la capacidad de enviar recordatorios periódicos a medida que se acerca la fecha de inicio del evento.",
+    "description": "Un programador de eventos privados y públicos con la capacidad de enviar recordatorios periódicos a medida que se acerca la fecha de inicio del evento.",
     "stack": [
       "typescript",
       "react",
@@ -52,7 +52,7 @@
     "title": "Control Interno de Almacén",
     "name": "control-interno-almacen",
     "image": "/images/projects/Control Interno Almacen - Thumbnail.png",
-    "description": "Una aplicación diseñada para emular el procedimiento de \"Inventario y baja de productos de almacén\" en la empresa Superintendencia de Mercado de Valores (SMV).",
+    "description": "Una aplicación diseñada para dar solución al caso de uso \"Inventario y baja de productos de almacén\" de la empresa Superintendencia de Mercado de Valores (SMV).",
     "stack": [
       "typescript",
       "react",
