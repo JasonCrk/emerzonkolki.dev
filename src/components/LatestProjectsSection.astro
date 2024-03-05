@@ -7,7 +7,7 @@ import ProjectItem from './ProjectItem.astro'
 
 import projects from '../data/projects.json'
 
-const latestProjects = projects.slice(0, 2)
+const latestProjects = projects.slice(0, 3)
 ---
 
 <section class='py-20 relative' id='projects'>
@@ -23,7 +23,7 @@ const latestProjects = projects.slice(0, 2)
 
   <Title>Latest projects</Title>
 
-  <div class='mt-4 flex flex-col gap-4'>
+  <section class='mt-4 flex flex-col gap-4'>
     {
       latestProjects.map(project => (
         <ProjectItem {...project} stack={project.stack as Skill[]} />
@@ -35,5 +35,5 @@ const latestProjects = projects.slice(0, 2)
         Ver todos los proyectos
       </Link>
     </div>
-  </div>
+  </section>
 </section>
