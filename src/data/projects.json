@@ -2,7 +2,7 @@
   {
     "title": "Ask Everyone",
     "name": "ask-everyone",
-    "image": "/images/projects/Ask Everyone - Thumbnail.png",
+    "image": "/images/projects/Ask Everyone - Thumbnail.webp",
     "description": "Aplicación de para crear encuestas, responder dichas encuestas y poder ver en forma de estadísticas las respuestas de los encuestados.",
     "stack": [
       "angular",
@@ -20,7 +20,7 @@
   {
     "title": "Youtube Clone",
     "name": "youtube-clone",
-    "image": "/images/projects/Youtube Clone - Thumbnail.png",
+    "image": "/images/projects/Youtube Clone - Thumbnail.webp",
     "description": "Un clone de la aplicación web de YouTube, con la mayoría de sus funcionalidades.",
     "stack": [
       "typescript",
@@ -35,7 +35,7 @@
   {
     "title": "Master Event Planner",
     "name": "master-event-planner",
-    "image": "/images/projects/Master Event Planner - Thumbnail.png",
+    "image": "/images/projects/Master Event Planner - Thumbnail.webp",
     "description": "Un programador de eventos privados y públicos con la capacidad de enviar recordatorios periódicos a medida que se acerca la fecha de inicio del evento.",
     "stack": [
       "typescript",
@@ -51,7 +51,7 @@
   {
     "title": "Control Interno de Almacén",
     "name": "control-interno-almacen",
-    "image": "/images/projects/Control Interno Almacen - Thumbnail.png",
+    "image": "/images/projects/Control Interno Almacen - Thumbnail.webp",
     "description": "Una aplicación diseñada para dar solución al caso de uso \"Inventario y baja de productos de almacén\" de la empresa Superintendencia de Mercado de Valores (SMV).",
     "stack": [
       "typescript",
