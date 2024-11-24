@@ -1,0 +1,227 @@
+:root {
+    --font-family: JetBrainsMono;
+    --font-weight-bold: 900;
+    --font-weight-semibold: 700;
+    --text-color: #fff;
+    --background: rgb(14, 14, 14);
+    --line-height: 1.20rem;
+    --grid-cells: 2;
+    --border-thickness: 2px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+* {
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--text-color);
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: var(--line-height) 2ch;
+    max-width: calc(min(74ch, round(down, 100%, 1ch)));
+    line-height: var(--line-height);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(./fonts/JetBrainsMono-ExtraBold.woff2);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(./fonts/JetBrainsMono-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(./fonts/JetBrainsMono-Regular.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    line-height: var(--line-height);
+    font-weight: var(--font-weight-semibold);
+    margin: calc(var(--line-height) * 2) 0 var(--line-height);
+
+    &>a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 2px;
+        }
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: calc(2 * var(--line-height));
+    text-transform: uppercase;
+    margin-bottom: calc(var(--line-height) * 2);
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+a:link {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}

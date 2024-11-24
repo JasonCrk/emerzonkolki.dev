@@ -1,0 +1,136 @@
+p {
+    font-size: 16px;
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    margin-bottom: var(--line-height);
+    line-height: 1.3rem;
+}
+
+img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.about {
+    display: flex;
+    width: calc(round(down, 100%, (1ch * var(--grid-cells)) - (1ch * var(--grid-cells) - 1), 1ch));
+    margin-bottom: var(--line-height);
+    gap: 1ch;
+
+    p {
+        margin-top: 0;
+    }
+}
+
+.about__content {
+    flex: 0 0 calc(round(down, (100% - (1ch * (var(--grid-cells) - 1))) / var(--grid-cells), .9ch));
+}
+
+.picture {
+    flex: 0 0 calc(round(down, (100% - (1ch * (var(--grid-cells) - 1))) / var(--grid-cells), 1ch));
+}
+
+table {
+    position: relative;
+    top: calc(var(--line-height) / 2);
+    width: calc(round(down, 100%, 1ch));
+    border-collapse: collapse;
+    margin: 0 0 calc(var(--line-height) * 2);
+
+    h3 {
+        font-size: 1rem;
+        font-weight: var(--font-weight-bold);
+    }
+}
+
+table tbody tr:first-child>* {
+    padding-top: calc((var(--line-height) / 2) - var(--border-thickness));
+}
+
+th,
+td {
+    border: var(--border-thickness) solid var(--text-color);
+    padding:
+        calc((var(--line-height) / 2)) calc(1ch - var(--border-thickness) / 2) calc((var(--line-height) / 2) - (var(--border-thickness)));
+    line-height: var(--line-height);
+    vertical-align: top;
+    text-align: left;
+}
+
+table tbody tr:first-child>* {
+    padding-top: calc((var(--line-height) / 2) - var(--border-thickness));
+}
+
+
+th {
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: square;
+    padding: 0 0 0 2ch;
+    margin: 0 0 var(--line-height);
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    line-height: var(--line-height);
+    font-size: 16px;
+}
+
+li::marker {
+    line-height: 0;
+}
+
+hr {
+    position: relative;
+    display: block;
+    height: var(--line-height);
+    margin: calc(var(--line-height) * 1.5) 0;
+    border: none;
+    color: var(--text-color);
+}
+
+hr:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: calc(var(--line-height) / 2 - var(--border-thickness));
+    left: 0;
+    width: 100%;
+    border-top: calc(var(--border-thickness) * 3) double var(--text-color);
+    height: 0;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+
+    body {
+        padding: var(--line-height) 2ch;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .picture {
+        width: 200px;
+    }
+
+    .in-develop-label {
+        display: none;
+    }
+}

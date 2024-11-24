@@ -1,0 +1,23 @@
+.directory {
+    padding: 0;
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: normal;
+    line-height: normal;
+    display: block;
+
+    &>a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 2px;
+        }
+    }
+}
+
+.development-icon {
+    font-size: 1.4rem;
+    cursor: default;
+}
